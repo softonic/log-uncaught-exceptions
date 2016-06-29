@@ -1,0 +1,35 @@
+{
+  "name": "log-uncaught-exceptions",
+  "version": "0.1.0",
+  "author": "Rubén Norte <ruben.norte@softonic.com>",
+  "description": "Logs uncaught process exceptions to a given logger",
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "homepage": "https://stash.redtonic/projects/NODE/repos/log-uncaught-exceptions",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@stash.redtonic:7999/projects/NODE/repos/log-uncaught-exceptions.git"
+  },
+  "files": [
+    "es",
+    "lib",
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "eslint es/**/*.js tests/unit/index.js tests/unit/specs/**/*.spec.js",
+    "test": "npm run lint",
+    "prebuild": "npm run test",
+    "build": "rm -rf lib && babel es -d lib",
+    "prerelease": "npm run build",
+    "release": "npm version -m \"New version: %s\"",
+    "postrelease": "npm run push && npm publish",
+    "push": "git push origin master && git push origin --tags"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0",
+    "eslint": "^2.13.1",
+    "eslint-config-airbnb-base": "^3.0.1",
+    "eslint-plugin-import": "^1.9.2"
+  }
+}
