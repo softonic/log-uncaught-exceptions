@@ -16,7 +16,7 @@
     "index.js"
   ],
   "scripts": {
-    "lint": "eslint es/**/*.js tests/unit/index.js tests/unit/specs/**/*.spec.js",
+    "lint": "eslint es/**/*.js spec/**/*.spec.js",
     "test": "npm run lint",
     "prebuild": "npm run test",
     "build": "rm -rf lib && babel es -d lib",
