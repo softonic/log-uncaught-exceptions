@@ -5,10 +5,10 @@
   "description": "Logs uncaught process exceptions to a given logger",
   "license": "Apache-2.0",
   "main": "index.js",
-  "homepage": "https://stash.redtonic/projects/NODE/repos/log-uncaught-exceptions",
+  "homepage": "https://github.com/softonic/log-uncaught-exceptions",
   "repository": {
     "type": "git",
-    "url": "ssh://git@stash.redtonic:7999/projects/NODE/repos/log-uncaught-exceptions.git"
+    "url": "git+https://github.com/softonic/log-uncaught-exceptions.git"
   },
   "files": [
     "es",

@@ -2,8 +2,6 @@
 
 Logs uncaught process exceptions to the given logger (ideally a [Bunyan](https://github.com/trentm/node-bunyan) logger but works with any object with a `fatal` method).
 
-Active maintainer: [ruben.norte@softonic.com](mailto:ruben.norte@softonic.com?subject=log-uncaught-exceptions)
-
 ## Installation
 
 ```bash
@@ -35,7 +33,7 @@ npm test
 
 ## Contribute
 
-1. Fork it: `git clone ssh://git@stash.redtonic:7999/NODE/log-uncaught-exceptions.git`
+1. Fork it: `git clone https://github.com/softonic/log-uncaught-exceptions.git`
 2. Create your feature branch: `git checkout -b feature/my-new-feature`
 3. Commit your changes: `git commit -am 'Added some feature'`
 4. Check the build: `npm run build`
